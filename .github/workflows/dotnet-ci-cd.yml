@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release ./src/ci-cd-example.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./src/Tests/Example.Application.UnitTest.csproj --no-build --verbosity normal
