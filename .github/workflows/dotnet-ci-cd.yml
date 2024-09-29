@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release ./src/ci-cd-example.sln --no-restore
     - name: Test
-      run: dotnet test --configuration Release ./src/ci-cd-example.sln  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ --no-build --verbosity normal
+      run: dotnet test --configuration Release ./src/ci-cd-example.sln --no-build --verbosity normal --collect:"XPlat Code Coverage"
